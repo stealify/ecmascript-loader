@@ -53,6 +53,7 @@ that is needed to neogate Module Loading and Registration.
 so all loaders in this repository do accept rollup.OutputChunk[]
 
 ## Why?
+- can produce compatible bundels for any environment eg: TypeScript, NodeJS, NWJS, Electron, GraalJS, WebWorkers, .....
 - supports all bundlers and bundler configs
 - supports all source code variants
 - supports all package variants
@@ -65,7 +66,7 @@ so all loaders in this repository do accept rollup.OutputChunk[]
 - Package Authors do produce inconsistent Module Bundels aka to much chor updates
 - I want to work with the Same Code that i write once no matter if it is for a CJS or ESM Consumer
 - creates a ModuleSystem Agnostic Module System the Stealify Lang EcmaScript Module System
-  - for Stealify Lang 
+  - for Stealify Lang: 
     - import.meta.url gets always injected
     - top level: ```top level: import, require(), await import()``` are Static Linked at Runtime
     - none top level: ```import(), require()``` and top level: ```import()``` are Dynamic Linked at Runtime
